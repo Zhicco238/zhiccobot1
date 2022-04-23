@@ -9,20 +9,20 @@ const chalk = require('chalk')
 
 // Website Api
 global.APIs = {
-	zenz: 'https://zenzapi.xyz',
+	zenz: 'https://zenzapis.xyz',
 }
 
 // Apikey Website Api
 global.APIKeys = {
-	'https://zenzapi.xyz': 'Your Key',
+	'https://zenzapis.xyz': 'BF39D349845E',
 }
 
 // Other
-global.owner = ['16075336978','62818301179']
-global.premium = ['6288292024190']
+global.owner = ['16075336978']
+global.premium = ['16075336978']
 global.packname = 'ZHICCO BOT'
-global.author = 'WhatsApp Bot'
-global.sessionName = 'zhicco'
+global.author = 'ZHICCO BOT'
+global.sessionName = 'session'
 global.prefa = ['','!','.','🐦','🐤','🗿']
 global.sp = '⭔'
 global.mess = {
@@ -40,7 +40,7 @@ global.limitawal = {
     premium: "Infinity",
     free: 100
 }
-global.thumb = fs.readFileSync('./lib/hisoka.jpg')
+global.thumb = fs.readFileSync('./lib/logo.jpg')
 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {

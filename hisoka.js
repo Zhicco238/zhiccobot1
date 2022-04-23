@@ -1,8 +1,3 @@
-/**
-   * Create By Dika Ardnt.
-   * Contact Me on wa.me/6288292024190
-   * Follow https://github.com/DikaArdnt
-*/
 
 require('./config')
 const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@adiwajshing/baileys')
@@ -533,11 +528,11 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
 	    case 'donasi': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/74fd634010128be37972c.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Bot Rental Prices\n⭔ 13k Per Group via E-Walet 1 Month\n⭔ 18k via pulsa 1 Month\n\n Premium Price Bot\n⭔ 8k per User 1 bulan\n\nPayment can be via Paypal/link aja/pulsa\n\nFor more details, you can chat with the owner\nhttps://wa.me/6288292024190 (Owner)\n\nDonate For Me : \n\n⭔ Paypal : https://www.paypal.me/Cakhaho\n⭔ Saweria : https://saweria.co/DikaArdnt` }, { quoted: m })
+                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/74fd634010128be37972c.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Bot Rental Prices\n⭔ 13k Per Group via E-Walet 1 Month\n⭔ 18k via pulsa 1 Month\n\n Premium Price Bot\n⭔ 8k per User 1 bulan\n\nPayment can be via /link aja/pulsa\n\nFor more details, you can chat with the owner\nhttps://wa.me/62818301179 (Owner)\n\nDonate For Me : \n⭔ Saweria : https://saweria.co/zhicco2` }, { quoted: m })
             }
             break
             case 'sc': {
-                m.reply('Script : https://github..com/zhicco238/zhiccobot1\n\n Dont Forget Give Star\n\nDonate : 62818301179 (Link Aja)\nSaweria : https://saweria.co/zhicco2\n\n Dont Forget Donate')
+                m.reply('Base : https://github.com/zhicco238\n\nAdded Dark Feature By ZHICCO BOT\n\n Dont Forget Give Star\n\nDonate : 62818301179 (Link Aja)\nSaweria : https://saweria.co/zhicco2\n\n Dont Forget Donate')
             }
             break
             case 'chat': {
@@ -1139,12 +1134,12 @@ break
                     let btn = [{
                                 urlButton: {
                                     displayText: 'Source Code',
-                                    url: 'https://github.com/Zhicco238/zhiccobot1'
+                                    url: 'https://github.com/zhicco238'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Number Phone Owner',
-                                    phoneNumber: '+1 (607)-533-6978'
+                                    phoneNumber: '+! 607-533-6978'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -1178,12 +1173,12 @@ break
 		    let btn = [{
                                 urlButton: {
                                     displayText: 'Source Code',
-                                    url: 'https://github.com/Zhicco238/zhiccobot1'
+                                    url: 'https://github.com/zhicco238'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Number Phone Owner',
-                                    phoneNumber: '+1 (607)-533-6978'
+                                    phoneNumber: '+1 607-533-6978'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -1965,7 +1960,7 @@ break
 	        case 'tiktok': case 'tiktoknowm': {
                 if (!text) throw 'Masukkan Query Link!'
                 m.reply(mess.wait)
-                let anu = await fetchJson(api('zenz', '/downloader/tiktok', { url: text }, 'apikey'))
+                let anu = await fetchJson('https://api.akuari.my.id', '/downloader/tiktok?link='+text)
                 let buttons = [
                     {buttonId: `tiktokwm ${text}`, buttonText: {displayText: '► With Watermark'}, type: 1},
                     {buttonId: `tiktokmp3 ${text}`, buttonText: {displayText: '♫ Audio'}, type: 1}
@@ -2466,6 +2461,89 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
                 m.reply('Sukses Change To Self Usage')
             }
             break
+            case 'texttomorse':{
+                 exec('python dark-text-morse.py '+text, (err, stdout) => {
+                 if(err) return m.reply(err)
+                 if (stdout) return m.reply(stdout)
+                })
+             }
+	     break
+             case 'simi':{
+                 exec('python dark-simi.py '+text, (err, stdout) => {
+                 if(err) return m.reply(err)
+                 if (stdout) return m.reply(stdout)
+                 })
+             }
+	     break
+             case 'ExploitWebdav':{
+                 exec('bash dark-webdav.sh '+text, (err, stdout) => {
+                 if(err) return m.reply(err)
+                 if (stdout) return m.reply(stdout)
+                 })
+             }
+	     break
+             case 'hosttoip':{
+                 exec('bash dark-ip.sh '+text, (err, stdout) => {
+                 if(err) return m.reply(err)
+                 if (stdout) return m.reply(stdout)
+                 })
+             }
+	     break
+             case 'nmap':{
+                 exec('bash dark-nmap.sh '+text, (err, stdout) => {
+                 if(err) return m.reply(err)
+                 if (stdout) return m.reply(stdout)
+                 })
+             }
+	     break
+	    case 'call':{
+	     if(text.includes("@")) {
+                    exec("python call.py "+text.split("@62")[1], (err, stdout) => {
+                        if(err) return m.reply(err)
+                        if (stdout) return m.reply(stdout)
+                    })
+                    } else if(text.startsWith("8")) {
+                    	exec("python call.py "+text, (err, stdout) => {
+                        if(err) return m.reply(err)
+                        if (stdout) return m.reply(stdout)
+                    })
+                    	} else {
+                    	m.reply(`Masukkan nomor contoh\n${prefix+command} 852+++++++++\natau\nTag nomor dengan cara\n${prefix+command} tag nomor`)
+                    	}
+             }
+	    break
+	    case 'spamsms':{
+	     if(text.includes("@")) {
+                    exec("python mpl.py "+text.split("@62")[1], (err, stdout) => {
+                        if(err) return m.reply(err)
+                        if (stdout) return m.reply(stdout)
+                    })
+                    } else if(text.startsWith("8")) {
+                    	exec("python mpl.py "+text, (err, stdout) => {
+                        if(err) return m.reply(err)
+                        if (stdout) return m.reply(stdout)
+                    })
+                    	} else {
+                    	m.reply(`Masukkan nomor contoh\n${prefix+command} 852****\natau\nTag nomor dengan cara\n${prefix+command} @mr_dark`)
+                    	}
+             }
+	    break
+	    case 'phonenumber-info':{
+	     if(text.includes("@")) {
+                    exec("python dark-phoneinfo.py "+text.split("@")[1], (err, stdout) => {
+                        if(err) return m.reply(err)
+                        if (stdout) return m.reply(stdout)
+                    })
+                    } else if(text.startsWith("+")) {
+                    	exec("python dark-phoneinfo.py "+text.split("+")[1], (err, stdout) => {
+                        if(err) return m.reply(err)
+                        if (stdout) return m.reply(stdout)
+                    })
+                    	} else {
+                    	m.reply(`Masukkan nomor contoh\n${prefix+command} +6281327441039\natau\nTag nomor dengan cara\n${prefix+command} @mr_dark`)
+                    	}
+             }
+	    break
             case 'ping': case 'botstatus': case 'statusbot': {
                 const used = process.memoryUsage()
                 const cpus = os.cpus().map(cpu => {
@@ -2535,313 +2613,277 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             }
             break
             case 'list': case 'menu': case 'help': case '?': {
-                anu = `┌──⭓ *Group Menu*
-│
-│⭔ ${prefix}linkgroup
-│⭔ ${prefix}ephemeral [option]
-│⭔ ${prefix}setppgc [image]
-│⭔ ${prefix}setname [text]
-│⭔ ${prefix}setdesc [text]
-│⭔ ${prefix}group [option]
-│⭔ ${prefix}editinfo [option]
-│⭔ ${prefix}add @user
-│⭔ ${prefix}kick @user
-│⭔ ${prefix}hidetag [text]
-│⭔ ${prefix}tagall [text]
-│⭔ ${prefix}antilink [on/off]
-│⭔ ${prefix}mute [on/off]
-│⭔ ${prefix}promote @user
-│⭔ ${prefix}demote @user
-│⭔ ${prefix}vote [text]
-│⭔ ${prefix}devote
-│⭔ ${prefix}upvote
-│⭔ ${prefix}cekvote
-│⭔ ${prefix}hapusvote
-│
-└───────⭓
+                anu = `*Last Update:* _22/04/2022 13:22 PM_
+*What the updated:* _Bug Patch, Fix Api, Fix Simi Command, Added SpamSms Command, New Menu Style, added phonenumber info command_
+*Who's Updated?:* _MrDark_
+════════════════════════════
+    *ZHICCO BOT  Menu*
+•➣ ${prefix}phonenumber-info [nomor]
+•➣ ${prefix}call [nomor]
+•➣ ${prefix}spamsms [nomor]
+•➣ ${prefix}nmap [IP]
+•➣ ${prefix}hosttoip [url]
+•➣ ${prefix}texttomorse [text]
+•➣ ${prefix}simi [text]
+•➣ ${prefix}ExploitWebdav [website] [html]
+     BY MR_DARK
 
-┌──⭓ *Downloader Menu*
-│
-│⭔ ${prefix}tiktoknowm [url]
-│⭔ ${prefix}tiktokwm [url]
-│⭔ ${prefix}tiktokmp3 [url]
-│⭔ ${prefix}instagram [url]
-│⭔ ${prefix}twitter [url]
-│⭔ ${prefix}twittermp3 [url]
-│⭔ ${prefix}facebook [url]
-│⭔ ${prefix}pinterestdl [url]
-│⭔ ${prefix}ytmp3 [url]
-│⭔ ${prefix}ytmp4 [url]
-│⭔ ${prefix}getmusic [query]
-│⭔ ${prefix}getvideo [query]
-│⭔ ${prefix}umma [url]
-│⭔ ${prefix}joox [query]
-│⭔ ${prefix}soundcloud [url]
-│
-└───────⭓
+    *Group Menu*
+•➣ ${prefix}linkgroup
+•➣ ${prefix}ephemeral [option]
+•➣ ${prefix}setppgc [image]
+•➣ ${prefix}setname [text]
+•➣ ${prefix}setdesc [text]
+•➣ ${prefix}group [option]
+•➣ ${prefix}editinfo [option]
+•➣ ${prefix}add @user
+•➣ ${prefix}kick @user
+•➣ ${prefix}hidetag [text]
+•➣ ${prefix}tagall [text]
+•➣ ${prefix}antilink [on/off]
+•➣ ${prefix}mute [on/off]
+•➣ ${prefix}promote @user
+•➣ ${prefix}demote @user
+•➣ ${prefix}vote [text]
+•➣ ${prefix}devote
+•➣ ${prefix}upvote
+•➣ ${prefix}cekvote
+•➣ ${prefix}hapusvote
 
-┌──⭓ *Search Menu*
-│
-│⭔ ${prefix}play [query]
-│⭔ ${prefix}yts [query]
-│⭔ ${prefix}google [query]
-│⭔ ${prefix}gimage [query]
-│⭔ ${prefix}pinterest [query]
-│⭔ ${prefix}wallpaper [query]
-│⭔ ${prefix}wikimedia [query]
-│⭔ ${prefix}ytsearch [query]
-│⭔ ${prefix}ringtone [query]
-│⭔ ${prefix}stalk [option] [query]
-│
-└───────⭓
+    *Downloader Menu*
+•➣ ${prefix}tiktoknowm [url]
+•➣ ${prefix}tiktokwm [url]
+•➣ ${prefix}tiktokmp3 [url]
+•➣ ${prefix}instagram [url]
+•➣ ${prefix}twitter [url]
+•➣ ${prefix}twittermp3 [url]
+•➣ ${prefix}facebook [url]
+•➣ ${prefix}pinterestdl [url]
+•➣ ${prefix}ytmp3 [url]
+•➣ ${prefix}ytmp4 [url]
+•➣ ${prefix}getmusic [query]
+•➣ ${prefix}getvideo [query]
+•➣ ${prefix}umma [url]
+•➣ ${prefix}joox [query]
+•➣ ${prefix}soundcloud [url]
 
-┌──⭓ *Random Menu*
-│
-│⭔ ${prefix}coffe
-│⭔ ${prefix}quotesanime
-│⭔ ${prefix}motivasi
-│⭔ ${prefix}dilanquote
-│⭔ ${prefix}bucinquote
-│⭔ ${prefix}katasenja
-│⭔ ${prefix}puisi
-│⭔ ${prefix}couple
-│⭔ ${prefix}anime
-│⭔ ${prefix}waifu
-│⭔ ${prefix}husbu
-│⭔ ${prefix}neko
-│⭔ ${prefix}shinobu
-│⭔ ${prefix}waifus (nsfw)
-│⭔ ${prefix}nekos (nsfw)
-│⭔ ${prefix}trap (nsfw)
-│⭔ ${prefix}blowjob (nsfw)
-│
-└───────⭓
+    *Search Menu*
+•➣ ${prefix}play [query]
+•➣ ${prefix}yts [query]
+•➣ ${prefix}google [query]
+•➣ ${prefix}gimage [query]
+•➣ ${prefix}pinterest [query]
+•➣ ${prefix}wallpaper [query]
+•➣ ${prefix}wikimedia [query]
+•➣ ${prefix}ytsearch [query]
+•➣ ${prefix}ringtone [query]
+•➣ ${prefix}stalk [option] [query]
 
-┌──⭓ *Text Pro Menu*
-│
-│⭔ ${prefix}3dchristmas
-│⭔ ${prefix}3ddeepsea
-│⭔ ${prefix}americanflag
-│⭔ ${prefix}3dscifi
-│⭔ ${prefix}3drainbow
-│⭔ ${prefix}3dwaterpipe
-│⭔ ${prefix}halloweenskeleton
-│⭔ ${prefix}sketch
-│⭔ ${prefix}bluecircuit
-│⭔ ${prefix}space
-│⭔ ${prefix}metallic
-│⭔ ${prefix}fiction
-│⭔ ${prefix}greenhorror
-│⭔ ${prefix}transformer
-│⭔ ${prefix}berry
-│⭔ ${prefix}thunder
-│⭔ ${prefix}magma
-│⭔ ${prefix}3dcrackedstone
-│⭔ ${prefix}3dneonlight
-│⭔ ${prefix}impressiveglitch
-│⭔ ${prefix}naturalleaves
-│⭔ ${prefix}fireworksparkle
-│⭔ ${prefix}matrix
-│⭔ ${prefix}dropwater
-│⭔ ${prefix}harrypotter
-│⭔ ${prefix}foggywindow
-│⭔ ${prefix}neondevils
-│⭔ ${prefix}christmasholiday
-│⭔ ${prefix}3dgradient
-│⭔ ${prefix}blackpink
-│⭔ ${prefix}gluetext
-│
-└───────⭓
+    *Random Menu*
+•➣ ${prefix}coffe
+•➣ ${prefix}quotesanime
+•➣ ${prefix}motivasi
+•➣ ${prefix}dilanquote
+•➣ ${prefix}bucinquote
+•➣ ${prefix}katasenja
+•➣ ${prefix}puisi
+•➣ ${prefix}couple
+•➣ ${prefix}anime
+•➣ ${prefix}waifu
+•➣ ${prefix}husbu
+•➣ ${prefix}neko
+•➣ ${prefix}shinobu
 
-┌──⭓ *Photo Oxy Menu*
-│
-│⭔ ${prefix}shadow
-│⭔ ${prefix}romantic
-│⭔ ${prefix}smoke
-│⭔ ${prefix}burnpapper
-│⭔ ${prefix}naruto
-│⭔ ${prefix}lovemsg
-│⭔ ${prefix}grassmsg
-│⭔ ${prefix}lovetext
-│⭔ ${prefix}coffecup
-│⭔ ${prefix}butterfly
-│⭔ ${prefix}harrypotter
-│⭔ ${prefix}retrolol
-│
-└───────⭓
+    *Text Pro Menu*
+•➣ ${prefix}3dchristmas
+•➣ ${prefix}3ddeepsea
+•➣ ${prefix}americanflag
+•➣ ${prefix}3dscifi
+•➣ ${prefix}3drainbow
+•➣ ${prefix}3dwaterpipe
+•➣ ${prefix}halloweenskeleton
+•➣ ${prefix}sketch
+•➣ ${prefix}bluecircuit
+•➣ ${prefix}space
+•➣ ${prefix}metallic
+•➣ ${prefix}fiction
+•➣ ${prefix}greenhorror
+•➣ ${prefix}transformer
+•➣ ${prefix}berry
+•➣ ${prefix}thunder
+•➣ ${prefix}magma
+•➣ ${prefix}3dcrackedstone
+•➣ ${prefix}3dneonlight
+•➣ ${prefix}impressiveglitch
+•➣ ${prefix}naturalleaves
+•➣ ${prefix}fireworksparkle
+•➣ ${prefix}matrix
+•➣ ${prefix}dropwater
+•➣ ${prefix}harrypotter
+•➣ ${prefix}foggywindow
+•➣ ${prefix}neondevils
+•➣ ${prefix}christmasholiday
+•➣ ${prefix}3dgradient
+•➣ ${prefix}blackpink
+•➣ ${prefix}gluetext
 
-┌──⭓ *Ephoto Menu*
-│
-│⭔ ${prefix}ffcover
-│⭔ ${prefix}crossfire
-│⭔ ${prefix}galaxy
-│⭔ ${prefix}glass
-│⭔ ${prefix}neon
-│⭔ ${prefix}beach
-│⭔ ${prefix}blackpink
-│⭔ ${prefix}igcertificate
-│⭔ ${prefix}ytcertificate
-│
-└───────⭓
+    *Photo Oxy Menu*
+•➣ ${prefix}shadow
+•➣ ${prefix}romantic
+•➣ ${prefix}smoke
+•➣ ${prefix}burnpapper
+•➣ ${prefix}naruto
+•➣ ${prefix}lovemsg
+•➣ ${prefix}grassmsg
+•➣ ${prefix}lovetext
+•➣ ${prefix}coffecup
+•➣ ${prefix}butterfly
+•➣ ${prefix}harrypotter
+•➣ ${prefix}retrolol
 
-┌──⭓ *Fun Menu*
-│
-│⭔ ${prefix}halah
-│⭔ ${prefix}hilih
-│⭔ ${prefix}huluh
-│⭔ ${prefix}heleh
-│⭔ ${prefix}holoh
-│⭔ ${prefix}jadian
-│⭔ ${prefix}jodohku
-│⭔ ${prefix}delttt
-│⭔ ${prefix}tictactoe
-│⭔ ${prefix}family100
-│⭔ ${prefix}tebak [option]
-│⭔ ${prefix}math [mode]
-│⭔ ${prefix}suitpvp [@tag]
-│
-└───────⭓
+    *Ephoto Menu*
+•➣ ${prefix}ffcover
+•➣ ${prefix}crossfire
+•➣ ${prefix}galaxy
+•➣ ${prefix}glass
+•➣ ${prefix}neon
+•➣ ${prefix}beach
+•➣ ${prefix}blackpink
+•➣ ${prefix}igcertificate
+•➣ ${prefix}ytcertificate
 
-┌──⭓ *Primbon Menu*
-│
-│⭔ ${prefix}nomorhoki
-│⭔ ${prefix}artimimpi
-│⭔ ${prefix}artinama
-│⭔ ${prefix}ramaljodoh
-│⭔ ${prefix}ramaljodohbali
-│⭔ ${prefix}suamiistri
-│⭔ ${prefix}ramalcinta
-│⭔ ${prefix}cocoknama
-│⭔ ${prefix}pasangan
-│⭔ ${prefix}jadiannikah
-│⭔ ${prefix}sifatusaha
-│⭔ ${prefix}rezeki
-│⭔ ${prefix}pekerjaan
-│⭔ ${prefix}nasib
-│⭔ ${prefix}penyakit
-│⭔ ${prefix}tarot
-│⭔ ${prefix}fengshui
-│⭔ ${prefix}haribaik
-│⭔ ${prefix}harisangar
-│⭔ ${prefix}harisial
-│⭔ ${prefix}nagahari
-│⭔ ${prefix}arahrezeki
-│⭔ ${prefix}peruntungan
-│⭔ ${prefix}weton
-│⭔ ${prefix}karakter
-│⭔ ${prefix}keberuntungan
-│⭔ ${prefix}memancing
-│⭔ ${prefix}masasubur
-│⭔ ${prefix}zodiak
-│⭔ ${prefix}shio
-│
-└───────⭓
+    *Fun Menu*
+•➣ ${prefix}halah
+•➣ ${prefix}hilih
+•➣ ${prefix}huluh
+•➣ ${prefix}heleh
+•➣ ${prefix}holoh
+•➣ ${prefix}jadian
+•➣ ${prefix}jodohku
+•➣ ${prefix}delttt
+•➣ ${prefix}tictactoe
+•➣ ${prefix}family100
+•➣ ${prefix}tebak [option]
+•➣ ${prefix}math [mode]
+•➣ ${prefix}suitpvp [@tag]
 
-┌──⭓ *Convert Menu*
-│
-│⭔ ${prefix}toimage
-│⭔ ${prefix}removebg
-│⭔ ${prefix}sticker
-│⭔ ${prefix}emojimix
-│⭔ ${prefix}tovideo
-│⭔ ${prefix}togif
-│⭔ ${prefix}tourl
-│⭔ ${prefix}tovn
-│⭔ ${prefix}tomp3
-│⭔ ${prefix}toaudio
-│⭔ ${prefix}ebinary
-│⭔ ${prefix}dbinary
-│⭔ ${prefix}styletext
-│
-└───────⭓
+    *Primbon Menu*
+•➣ ${prefix}nomorhoki
+•➣ ${prefix}artimimpi
+•➣ ${prefix}artinama
+•➣ ${prefix}ramaljodoh
+•➣ ${prefix}ramaljodohbali
+•➣ ${prefix}suamiistri
+•➣ ${prefix}ramalcinta
+•➣ ${prefix}cocoknama
+•➣ ${prefix}pasangan
+•➣ ${prefix}jadiannikah
+•➣ ${prefix}sifatusaha
+•➣ ${prefix}rezeki
+•➣ ${prefix}pekerjaan
+•➣ ${prefix}nasib
+•➣ ${prefix}penyakit
+•➣ ${prefix}tarot
+•➣ ${prefix}fengshui
+•➣ ${prefix}haribaik
+•➣ ${prefix}harisangar
+•➣ ${prefix}harisial
+•➣ ${prefix}nagahari
+•➣ ${prefix}arahrezeki
+•➣ ${prefix}peruntungan
+•➣ ${prefix}weton
+•➣ ${prefix}karakter
+•➣ ${prefix}keberuntungan
+•➣ ${prefix}memancing
+•➣ ${prefix}masasubur
+•➣ ${prefix}zodiak
+•➣ ${prefix}shio
 
-┌──⭓ *Main Menu*
-│
-│⭔ ${prefix}ping
-│⭔ ${prefix}owner
-│⭔ ${prefix}menu / ${prefix}help / ${prefix}?
-│⭔ ${prefix}delete
-│⭔ ${prefix}infochat
-│⭔ ${prefix}quoted
-│⭔ ${prefix}listpc
-│⭔ ${prefix}listgc
-│⭔ ${prefix}listonline
-│⭔ ${prefix}speedtest
-│
-└───────⭓
+    *Convert Menu*
+•➣ ${prefix}toimage
+•➣ ${prefix}removebg
+•➣ ${prefix}sticker
+•➣ ${prefix}emojimix
+•➣ ${prefix}tovideo
+•➣ ${prefix}togif
+•➣ ${prefix}tourl
+•➣ ${prefix}tovn
+•➣ ${prefix}tomp3
+•➣ ${prefix}toaudio
+•➣ ${prefix}ebinary
+•➣ ${prefix}dbinary
+•➣ ${prefix}styletext
 
-┌──⭓ *Database Menu*
-│
-│⭔ ${prefix}setcmd
-│⭔ ${prefix}listcmd
-│⭔ ${prefix}delcmd
-│⭔ ${prefix}lockcmd
-│⭔ ${prefix}addmsg
-│⭔ ${prefix}listmsg
-│⭔ ${prefix}getmsg
-│⭔ ${prefix}delmsg
-│
-└───────⭓
+    *Main Menu*
+•➣ ${prefix}ping
+•➣ ${prefix}owner
+•➣ ${prefix}menu / ${prefix}help / ${prefix}?
+•➣ ${prefix}delete
+•➣ ${prefix}infochat
+•➣ ${prefix}quoted
+•➣ ${prefix}listpc
+•➣ ${prefix}listgc
+•➣ ${prefix}listonline
+•➣ ${prefix}speedtest
 
-┌──⭓ *Anonymous Menu*
-│
-│⭔ ${prefix}anonymous
-│⭔ ${prefix}start
-│⭔ ${prefix}next
-│⭔ ${prefix}keluar
-│⭔ ${prefix}sendkontak
-│
-└───────⭓
+    *Database Menu*
+•➣ ${prefix}setcmd
+•➣ ${prefix}listcmd
+•➣ ${prefix}delcmd
+•➣ ${prefix}lockcmd
+•➣ ${prefix}addmsg
+•➣ ${prefix}listmsg
+•➣ ${prefix}getmsg
+•➣ ${prefix}delmsg
 
-┌──⭓ *Islamic Menu*
-│
-│⭔ ${prefix}iqra
-│⭔ ${prefix}hadist
-│⭔ ${prefix}alquran
-│⭔ ${prefix}juzamma
-│⭔ ${prefix}tafsirsurah
-│
-└───────⭓
+    *Anonymous Menu*
 
-┌──⭓ *Voice Changer*
-│
-│⭔ ${prefix}bass
-│⭔ ${prefix}blown
-│⭔ ${prefix}deep
-│⭔ ${prefix}earrape
-│⭔ ${prefix}fast
-│⭔ ${prefix}fat
-│⭔ ${prefix}nightcore
-│⭔ ${prefix}reverse
-│⭔ ${prefix}robot
-│⭔ ${prefix}slow
-│⭔ ${prefix}tupai
-│
-└───────⭓
+•➣ ${prefix}anonymous
+•➣ ${prefix}start
+•➣ ${prefix}next
+•➣ ${prefix}keluar
+•➣ ${prefix}sendkontak
 
-┌──⭓ *Owner Menu*
-│
-│⭔ ${prefix}react [emoji]
-│⭔ ${prefix}chat [option]
-│⭔ ${prefix}join [link]
-│⭔ ${prefix}leave
-│⭔ ${prefix}block @user
-│⭔ ${prefix}unblock @user
-│⭔ ${prefix}bcgroup [text]
-│⭔ ${prefix}bcall [text]
-│⭔ ${prefix}setppbot [image]
-│⭔ ${prefix}setexif
-│
-└───────⭓`
+    *Islamic Menu*
+•➣ ${prefix}iqra
+•➣ ${prefix}hadist
+•➣ ${prefix}alquran
+•➣ ${prefix}juzamma
+•➣ ${prefix}tafsirsurah
+
+    *Voice Changer*
+•➣ ${prefix}bass
+•➣ ${prefix}blown
+•➣ ${prefix}deep
+•➣ ${prefix}earrape
+•➣ ${prefix}fast
+•➣ ${prefix}fat
+•➣ ${prefix}nightcore
+•➣ ${prefix}reverse
+•➣ ${prefix}robot
+•➣ ${prefix}slow
+•➣ ${prefix}tupai
+
+    *Owner Menu*
+•➣ ${prefix}react [emoji]
+•➣ ${prefix}chat [option]
+•➣ ${prefix}join [link]
+•➣ ${prefix}leave
+•➣ ${prefix}block @user
+•➣ ${prefix}unblock @user
+•➣ ${prefix}bcgroup [text]
+•➣ ${prefix}bcall [text]
+•➣ ${prefix}setppbot [image]
+•➣ ${prefix}setexif`
                 let btn = [{
                                 urlButton: {
                                     displayText: 'Source Code',
-                                    url: 'https://github.com/Zhicco238/zhiccobot1'
+                                    url: 'https://github.com/zhicco238'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Number Phone Owner',
-                                    phoneNumber: '+1 (607)-533-6978'
+                                    phoneNumber: '+1 607-533-6978'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2898,7 +2940,6 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                         if (stdout) return m.reply(stdout)
                     })
                 }
-			
 		if (m.chat.endsWith('@s.whatsapp.net') && isCmd) {
                     this.anonymous = this.anonymous ? this.anonymous : {}
                     let room = Object.values(this.anonymous).find(room => [room.a, room.b].includes(m.sender) && room.state === 'CHATTING')

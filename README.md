@@ -1,46 +1,34 @@
 <div align="center">
-<img src="https://i.postimg.cc/9FxKh6TS/png-clipart-anonymous-logo-security-hacker-graphics-anonymous-white-logo-removebg-preview.png" alt="SELF" width="300" />
-</p>
-<p align="center">
-<a href="https://github.com/zhicco334"><img title="Author" src="https://img.shields.io/badge/AUTHOR-zhicco-orange.svg?style=for-the-badge&logo=github"></a>
-</p>
-<p align="center">
-<a href="https://github.com/zhicco334/wabotzhicco/followers"><img title="Followers" src="https://img.shields.io/github/followers/Ramlan666?color=blue&style=flat-square"></a>
-<a href="https://github.com/zhicco334/bot/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Ramlan666/babybotcolor=red&style=flat-square"></a>
-<a href="https://github.com/zhicco334/bot/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Ramlan666/babybot?color=red&style=flat-square"></a>
-<a href="  https://github.com/zhicco442/wabotzhicco/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Ramlan666/babybot?label=Watchers&color=blue&style=flat-square"></a>
-<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FRamlan666%2Fwabotzhicco&count_bg=%2379C83D&title_bg=%23555555&icon=probot.svg&icon_color=%2300FF6D&title=hits&edge_flat=false"/></a>
-</p>
-<img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Developer.gif" alt="Mario Game" width="600" />
+<img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Developer.gif" alt="Mario Game" width="300" />
 <div align="center">
-<details>
+ <details>
  
 </details>
+ 
+Script WhatsApp Bot Multi Device,
+Base By DikaArdnt
 
-# bot whatsapp by mr.chainner
-  
-#kegunaan bot wa
-  kegunaan dia banya salah satunya itu bisa bikin logo dll 
+## NOTE
+This Script is for everyone, not for Sale. Jika dijual neraka menunggumu brother !
 
-## FOR TERMUX USER
+## UNTUK PENGGUNA WINDOWS/RDP
+
+* Unduh & Instal Git [`Klik Disini`](https://git-scm.com/downloads)
+* Unduh & Instal NodeJS [`Klik Disini`](https://nodejs.org/en/download)
+* Unduh & Instal FFmpeg [`Klik Disini`](https://ffmpeg.org/download.html) (**Jangan Lupa Tambahkan FFmpeg ke variabel lingkungan PATH**)
+
+
+## FOR TERMUX/UBUNTU/SSH USER</div>
 
 ```bash
-> pkg update && pkg upgrade
-> pkg install nodejs
->pkg install ffmpeg
->pkg install imagemagick
-> git clone https://github.com/zhicco334/bot
-> cd bot
-> npm start
+$ apt update && apt upgrade
+$ apt install git -y
+$ apt install nodejs -y
+$ apt install ffmpeg -y
+$ apt install yarn (untuk termux)
+$ git clone https://github.com/DARK-02/DarkBotMD
+$ cd DarkBotMD
+$ yarn (untuk termux)
+$ npm install
+$ node index
 ```
-
----------
-
-#### Author / Creator : [`Zhicco334`](https://GitHub.com/zhicco334)
-
-#### Youtube : [`zhicco334`](https://youtube.com/channel/UC0NplCYNyvuhPL5c1H3vq-g)
-
-#### instagram : [`zhicco334`](https://instagram.com/xzhiccoxcax)
-
-#### whatsapp : [`zhicco334`](https://wa.me/+16075336978)
-
